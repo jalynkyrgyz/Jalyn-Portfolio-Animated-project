@@ -38,3 +38,16 @@ button {
         color: $pinkColor;
     }
 }
+
+.inverse {
+    background-color: #fff;
+    color: $pinkColor;
+    border: $pinkColor 0.1rem solid;
+    transition: 0.4s ease-in-out;
+
+    &:hover {
+        background-color: $pinkColor;
+        border-color: transparent;
+        color: #fff;
+    }
+}
