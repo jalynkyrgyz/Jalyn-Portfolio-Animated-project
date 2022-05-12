@@ -3,6 +3,7 @@ import Starter from "./sections/Starter";
 import Why from "./sections/Why";
 import Testimonials from "./sections/Testimonials";
 import Blogs from "./sections/Blogs";
+import Footer from "./sections/Footer";
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Why />
       <Testimonials/>
       <Blogs />
+      <Footer />
     </div>
   );
 }
