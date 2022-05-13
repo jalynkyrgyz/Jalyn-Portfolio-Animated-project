@@ -148,3 +148,188 @@
         }
     }
 }
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .footer-container {
+        .main-container {
+            grid-template-columns: 1fr;
+
+            h3 {
+                font-size: 2.4rem;
+            }
+
+            ul {
+                margin-bottom: 2rem;
+
+                li {
+                    font-size: 1.5rem;
+                }
+            }
+
+            .news-letter {
+                margin-bottom: 2rem;
+
+                p {
+                    font-size: 1.7rem;
+                }
+
+                .mail {
+                    input {
+                        height: 4.5rem;
+                    }
+
+                    button {
+                        height: 4.7rem;
+                    }
+                }
+            }
+
+            .touch {
+                .touch-section {
+                    .icon {
+                        height: 5rem;
+                        width: 5rem;
+
+                        svg {
+                            font-size: 2rem;
+                        }
+                    }
+                }
+
+                .detail {
+                    .detail-name {
+                        font-size: medium;
+                    }
+
+                    .detail-content {
+                        font-size: small;
+                    }
+                }
+            }
+        }
+
+        .copyright {
+            border-top-width: 0.5rem;
+            flex-direction: column;
+
+            .copy {
+                p {
+                    font-size: 2rem;
+                }
+            }
+
+            .icons {
+                margin-bottom: 1rem;
+
+                .icon {
+                    height: 4rem;
+                    width: 4rem;
+                    margin-right: 1rem;
+
+                    svg {
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .footer-container {
+        min-height: 30vh;
+
+        .main-container {
+            ul {
+                margin-bottom: 2rem;
+
+                li {
+                    font-size: 1.5rem;
+                }
+            }
+
+            .news-letter {
+
+                // margin-bottom: 2rem;
+                p {
+                    font-size: 1.3rem;
+                    width: 90%;
+                }
+
+                .mail {
+                    input {
+                        height: 3rem;
+
+                        // height: 3.3rem;
+                        font-size: 0.9rem;
+                    }
+
+                    button {
+                        // padding: 1rem;
+                        height: 3.2rem;
+                    }
+                }
+            }
+
+            .touch {
+                .touch-section {
+                    &:last-child {
+                        .icon {
+                            height: 5rem;
+                            width: 6rem;
+                        }
+                    }
+
+                    .icon {
+                        height: 5rem;
+                        width: 5rem;
+
+                        svg {
+                            font-size: 2rem;
+                        }
+                    }
+                }
+
+                .detail {
+                    .detail-name {
+                        font-size: medium;
+                    }
+
+                    .detail-content {
+                        font-size: x-small;
+                    }
+                }
+            }
+        }
+
+        .copyright {
+            border-top-width: 0.2rem;
+
+            .copy {
+                p {
+                    font-size: 2rem;
+                }
+            }
+
+            .icons {
+                margin-bottom: 1rem;
+
+                .icon {
+                    height: 4rem;
+                    width: 4rem;
+                    margin-right: 1rem;
+
+                    svg {
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .footer-container {
+        min-height: 30vh;
+    }
+}

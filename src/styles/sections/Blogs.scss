@@ -37,3 +37,31 @@
         }
     }
 }
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .blogs-container {
+        .container {
+            .title-container {
+                p {
+                    font-size: 1.8rem;
+                }
+            }
+
+            .blogs {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .blogs-container {
+        .container {
+            .title-container {
+                p {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+}

@@ -16,10 +16,8 @@ function Why() {
                 </div>
             </div>
             <div className="content">
-                <div className=''>
-                    <div className="video">
-                        <GoPlay />
-                    </div>
+                <div className="video">
+                    <GoPlay />                    
                 </div>
                 <div className="reasons">
                     <ul>
