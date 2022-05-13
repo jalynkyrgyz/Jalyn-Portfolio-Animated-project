@@ -5,11 +5,12 @@ import Testimonials from "./sections/Testimonials";
 import Blogs from "./sections/Blogs";
 import Footer from "./sections/Footer";
 import ScrollTop from "./components/ScrollTop";
+import {motion} from "framer-motion";
 
 
 function App() {
   return (
-    <div>
+    <motion.div ititial="hidden" animate="show">
       <ScrollTop/>
       <Starter />
       <About />
@@ -17,7 +18,7 @@ function App() {
       <Testimonials/>
       <Blogs />
       <Footer />
-    </div>
+    </motion.div>
   );
 }
 

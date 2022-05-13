@@ -1,11 +1,13 @@
 import React from 'react';
 import Button from './Button';
 import {HiOutlineArrowNarrowRight} from "react-icons/hi"
+import { motion } from 'framer-motion';
 import "../styles/components/Blog.scss";
 
-function Blog({image, title, subTitle}) {
+function Blog({image, title, subTitle, variants, animate}) {
   return (
-    <div className='blog-container'>
+    <motion.div className='blog-container'
+    variants={variants} animate={animate}>
         <div className="image">
             <img src={image} alt="Blog" />
         </div>
@@ -18,7 +20,7 @@ function Blog({image, title, subTitle}) {
             </div>
             <Button content="Read More" color="inverse" icon={<HiOutlineArrowNarrowRight/>} />
         </div>
-    </div>
+    </motion.div>
   )
 }
 
